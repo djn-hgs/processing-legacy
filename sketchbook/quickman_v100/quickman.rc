@@ -1,0 +1,149 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAN_DIALOG DIALOGEX 0, 0, 112, 437
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_INFO,4,4,104,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Max Iters",IDC_STATIC,12,76,32,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    EDITTEXT        IDC_ITERS,48,76,56,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_ADJUST_ITERS,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,92,76,11,12
+    LTEXT           "Palette",IDC_STATIC,16,92,28,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    COMBOBOX        IDC_PALETTE,48,92,56,344,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Precision",IDC_STATIC,16,108,28,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    COMBOBOX        IDC_PRECISION,48,108,56,39,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Algorithm",IDC_STATIC,8,124,36,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    COMBOBOX        IDC_ALGORITHM,48,124,56,59,CBS_DROPDOWNLIST | WS_TABSTOP
+    DEFPUSHBUTTON   "Calculate",ID_CALCULATE,8,192,44,12
+    PUSHBUTTON      "Zoom",ID_ZOOM,60,192,44,12
+    PUSHBUTTON      "Home",ID_HOME,8,208,44,12
+    PUSHBUTTON      "Fullscreen",ID_FULLSCREEN,60,208,44,12
+    PUSHBUTTON      "Log Image",ID_LOG_IMAGE,8,272,44,12
+    PUSHBUTTON      "Save BMP",ID_SAVE_BMP,60,272,44,12
+    PUSHBUTTON      "Next",ID_LOG_NEXT,8,256,44,12
+    PUSHBUTTON      "Previous",ID_LOG_PREV,60,256,44,12,BS_CENTER
+    CONTROL         "",IDC_THUMBNAIL_FRAME,"Static",SS_BLACKFRAME,4,292,104,135,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,68,104,1
+    LTEXT           "",IDC_STATUS,4,427,64,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_LOGFILE,8,237,96,51,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES,HIDC_LOGFILE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,228,102,1
+    LTEXT           "",IDC_STATUS2,68,427,40,8,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Threads",IDC_STATIC,12,140,32,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    COMBOBOX        IDC_THREADS,48,140,56,59,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Zoom Rate",IDC_STATIC,4,172,40,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Pan Rate",IDC_STATIC,4,156,40,12,SS_CENTERIMAGE,WS_EX_RIGHT
+    CONTROL         "",IDC_PAN_RATE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,44,156,64,12
+    CONTROL         "",IDC_ZOOM_RATE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,44,172,64,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 105
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 430
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MAG                 CURSOR                  "mag.cur"
+IDC_HAND_CLOSED         CURSOR                  "hclosed.cur"
+IDC_HAND_OPEN           CURSOR                  "hopen.cur"
+IDC_RTZOOM              CURSOR                  "rtzoom.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAN                 ICON                    "quickman.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

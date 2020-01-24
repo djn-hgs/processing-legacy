@@ -1,0 +1,104 @@
+// Logfile for tuning the algorithms. 
+
+// Experiment with num stripes per thread for 32, 16, 8, 4, and 2 threads. 
+// For 0x234471 these are 2, 3, 4, 4, and 7... (it's pointless to have
+// a number other than 1 for 1 thread).
+
+spt 0x234471
+
+// First 10: asymmetric images for load balance testing. Percentage of total
+// iterations in top and bottom halves is shown. Measure total time.
+
+// 34/67, zoom on this one
+Real     -0.1528654654285194
+Imag     1.0391915722383200
+Mag      2835.699366     
+Iters    512
+Palette  4
+
+// 20/80, zoom on this one
+Real	-0.1093648921937720
+Imag	0.8929892464152412
+Mag	189.417014     
+Iters	2048
+Palette 5
+
+// 65/35, slow to calculate, non-diverging area at top
+Real	 0.2506215256381954
+Imag	 0.0000230624649680
+Mag	 100068312.500000
+Iters	 8192
+Palette  10
+
+// 41/59
+Real	-1.4079057628707639
+Imag	0.1369411359113666
+Mag	386336215.784151
+Iters   512
+Palette 8
+
+// 60/40
+Real	0.3636746147541568
+Imag	-0.0770936906907580
+Mag	90774665966.937805
+Iters   512
+Palette 5
+
+// 41/59
+Real	-1.0284578033233187
+Imag	0.3614638719389877
+Mag	52858348310.540207
+Iters   1400
+Palette 8
+
+// 41/59
+Real	-1.7497652877326211
+Imag	0.0000000979230737
+Mag	164437515986.723180
+Iters	1400
+Palette 9
+
+// 64/36
+Real	-0.1024289346879360
+Imag	-0.6501152641994081
+Mag	57409.727988    
+Iters	4000
+Palette 9
+
+// 31/68
+Real	-0.7499688667254360
+Imag	-0.0512155535843310
+Mag	58719208623.133087
+Iters	2700
+Palette 13
+
+// 58/42
+Real	-1.7495735254932565
+Imag	-0.0001094475670303
+Mag	425531114.666667
+Iters	2048
+Palette 9
+
+// Next three: some high iteration count images
+
+// Home image
+Real     -0.7000000000000000
+Imag      0.0000000000000000
+Mag      1.350000  
+Iters    16384
+Palette  3
+
+Real     0.2521079258364023
+Imag     0.0001549076324581
+Mag      30080509661.400002
+Iters    8192
+Palette  9
+
+// A real slow one
+Real     0.2500955880978519
+Imag     0.0000014906554474
+Mag      16252208591032.434000
+Iters    131072
+Palette  9
+
+
